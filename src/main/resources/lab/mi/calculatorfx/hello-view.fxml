@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.mi.calculatorfx.HelloController">
+   <center>
+      <GridPane prefHeight="216.0" prefWidth="600.0" style="-fx-background-color: #1c1c1c;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.800048828125" minWidth="10.0" prefWidth="85.5999755859375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.600048828125" minWidth="10.0" prefWidth="76.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.3999633789062" minWidth="10.0" prefWidth="71.20003662109374" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.79998779296875" minWidth="10.0" prefWidth="66.99998779296874" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="bttSeven" mnemonicParsing="false" onAction="#btnSevenClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="7" textFill="WHITE" translateX="10.0" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttCancel" mnemonicParsing="false" onAction="#btnClearClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: d4d4d2;" text="C" translateX="10.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttFour" mnemonicParsing="false" onAction="#btnFourClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="4" textFill="WHITE" translateX="10.0" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttOne" mnemonicParsing="false" onAction="#btnOneClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="1" textFill="WHITE" translateX="10.0" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttSign" mnemonicParsing="false" onAction="#btnSignClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: d4d4d2;" text="+/-" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttEight" mnemonicParsing="false" onAction="#btnEightClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttFive" mnemonicParsing="false" onAction="#btnFiveClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttTwo" mnemonicParsing="false" onAction="#btnTwoClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttProcantage" mnemonicParsing="false" onAction="#btnProcantageClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: d4d4d2;" text="\%" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttNine" mnemonicParsing="false" onAction="#btnNineClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttSix" mnemonicParsing="false" onAction="#btnSixClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttThree" mnemonicParsing="false" onAction="#btnThreeClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttDivide" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnDivideClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #26ff00;" text="÷" textAlignment="RIGHT" textFill="WHITE" translateX="5.0" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttMultiply" mnemonicParsing="false" onAction="#btnMultiplyClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #26ff00;" text="×" textFill="WHITE" translateX="5.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttSubtract" mnemonicParsing="false" onAction="#btnMinusClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #26ff00;" text="-" textFill="WHITE" translateX="5.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttAdd" mnemonicParsing="false" onAction="#btnPlusClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #26ff00;" text="+" textFill="WHITE" translateX="5.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: #1c1c1c;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="bttZero" alignment="CENTER" mnemonicParsing="false" onAction="#btnZeroClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #505050;" text="0" textFill="WHITE" translateX="10.0" translateY="5.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttComa" mnemonicParsing="false" onAction="#btnComaClicked" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #505050;" text="," textFill="WHITE" translateX="17.0" translateY="5.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttEqual" mnemonicParsing="false" onAction="#btnEqualClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #26ff00;" text="=" textFill="WHITE" translateX="25.0" translateY="5.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <TextField fx:id="tvText" alignment="BOTTOM_RIGHT" editable="false" prefHeight="114.0" prefWidth="300.0" style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff;" BorderPane.alignment="BOTTOM_RIGHT">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </TextField>
+   </top>
+</BorderPane>
